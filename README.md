@@ -18,36 +18,29 @@ This project is a Python-based tool designed to analyze food images and manual i
 - **User-Friendly Interface**: Simple command-line interface for easy interaction.
 
 
-### Example output
+## Food Details
+------------
+Food: Sandwich with boiled egg
+1 serving (100 g)
 
-==================================================
-Food Details
-==================================================
-Sandwich with boiled egg
-100g per serving
-
-==================================================
 Ingredients
-==================================================
-Ingredient                  Quantity            
----------------------------------------------
-Boiled Eggs                2 large eggs        
-Whole Wheat Bread          2 slices            
-Lettuce                    2-3 leaves          
-Tomato                     2 large slices      
-Cucumber                   2-3 slices          
-Mayonnaise                 1 tablespoon        
-Mustard                    1 teaspoon          
-Salt                       a pinch             
-Black Pepper               a pinch             
-Olive Oil                  1 teaspoon          
+-----------
+-Ingredient           Quantity            
+-Boiled Eggs          2 large eggs        
+-Whole Wheat Bread    2 slices            
+-Lettuce              2-3 leaves          
+-Tomato               2 large slices      
+-Cucumber             2-3 slices          
+-Mayonnaise           1 tablespoon        
+-Mustard              1 teaspoon          
+-Salt                 a pinch             
+-Black Pepper         a pinch             
+-Olive Oil            1 teaspoon          
 
-==================================================
 Nutritional Information
-==================================================
-Calories:          49.05 kcal
-Carbs:            11.83 g
-Protein:           0.35 g
-Fat:               0.35 g
-Fiber:             1.97 g
-==================================================
+----------------------
+-Calories        49 kcal
+-Carbohydrate    11.83 g
+-Protein         0.35 g
+-Fat             0.35 g
+-Fiber           1.97 g
