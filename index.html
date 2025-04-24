@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChompChecker 🦷🔍</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>ChompChecker <span class="emoji">🦷🔍</span></h1>
+            <p class="tagline">Know what you munch</p>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Input Methods -->
+            <div class="input-methods">
+                <button class="method-btn photo-btn">
+                    <span class="emoji">📸</span>
+                    Take a Photo
+                </button>
+                <button class="method-btn manual-btn">
+                    <span class="emoji">✍️</span>
+                    Manual Entry
+                </button>
+            </div>
+
+            <!-- Manual Entry Form -->
+            <div class="entry-form" id="manualEntry">
+                <h2>Add Your Meal <span class="emoji">🍽️</span></h2>
+                <div class="input-group">
+                    <input type="text" placeholder="Meal Name" class="meal-input">
+                </div>
+
+                <h3>Ingredients <span class="emoji">🥬</span></h3>
+                <div class="ingredients-list">
+                    <div class="ingredient-row">
+                        <input type="text" placeholder="Ingredient" class="ingredient-input">
+                        <input type="text" placeholder="Amount" class="amount-input">
+                        <button class="delete-btn">❌</button>
+                    </div>
+                </div>
+                <button class="add-ingredient-btn">+ Add Ingredient</button>
+                <button class="calculate-btn">Calculate! <span class="emoji">🧮</span></button>
+            </div>
+
+            <!-- Results Section -->
+            <div class="results" id="results">
+                <h2>Your Results! <span class="emoji">🎯</span></h2>
+                <div class="result-card">
+                    <div class="meal-details">
+                        <h3>Meal Details <span class="emoji">🍱</span></h3>
+                        <p class="meal-name">Your Meal Name</p>
+                        <p class="serving-size">Serving Size: 100g</p>
+                    </div>
+
+                    <div class="nutrition-facts">
+                        <h3>Nutrition Facts <span class="emoji">📊</span></h3>
+                        <div class="nutrient-row">
+                            <span class="emoji">🔥</span>
+                            <span class="nutrient">Calories:</span>
+                            <span class="value">000 kcal</span>
+                        </div>
+                        <div class="nutrient-row">
+                            <span class="emoji">🌾</span>
+                            <span class="nutrient">Carbs:</span>
+                            <span class="value">00g</span>
+                        </div>
+                        <div class="nutrient-row">
+                            <span class="emoji">💪</span>
+                            <span class="nutrient">Protein:</span>
+                            <span class="value">00g</span>
+                        </div>
+                        <div class="nutrient-row">
+                            <span class="emoji">🥑</span>
+                            <span class="nutrient">Fat:</span>
+                            <span class="value">00g</span>
+                        </div>
+                        <div class="nutrient-row">
+                            <span class="emoji">🌿</span>
+                            <span class="nutrient">Fiber:</span>
+                            <span class="value">00g</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="share-btn">Share Results <span class="emoji">📤</span></button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
