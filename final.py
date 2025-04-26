@@ -18,12 +18,9 @@ except Exception as e:
     print(f"Error loading Gemini API key: {str(e)}")
     exit(1)
 
-# OpenAI API Key
 openai.api_key = os.getenv('OPENAI_API_KEY')
 if not openai.api_key:
     raise ValueError("OPENAI_API_KEY not found in .env file.")
-
-# Initialize the Gemini model
 gemini_model = genai.GenerativeModel('gemini-1.5-flash')
 
 def manual_entry():
@@ -73,11 +70,10 @@ def analyze_food_image(image_data):
     try:
         image = Image.open(io.BytesIO(image_data))
         
-        # Convert image to RGB if necessary
         if image.mode not in ('RGB', 'L'):
             image = image.convert('RGB')
         
-        # Save image to a temporary file for debugging
+        # Save image to a temporary file 
         temp_file = "temp_image.jpg"
         image.save(temp_file)
         print(f"Image saved temporarily as {temp_file}")
